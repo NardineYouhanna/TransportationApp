@@ -6,11 +6,15 @@ public class Client implements User {
 	public String email= "";
 	public String mobilenum= "";
 	@Override
-	public void update(Object o) {
-		// TODO Auto-generated method stub
-		
+	public void update(Object o) 
+	{
+		if(o instanceof TransportationApp)
+		{
+			TransportationApp ta = (TransportationApp) o; //cast el o l transportation app
+			ta.getState(); 
+		}
 	}
-	
+
 	@Override
 	public String getName() {
 		return name;
@@ -132,6 +136,12 @@ public class Client implements User {
 
 	@Override
 	public void Addfavareass(String fav) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void AddBalance(int balance) {
 		// TODO Auto-generated method stub
 		
 	}
