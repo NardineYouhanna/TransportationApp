@@ -5,8 +5,7 @@ public interface User {
 
 	public static ArrayList<String> favareas  = new ArrayList<String>();
 	ArrayList<Driver> Drivers  = new ArrayList<Driver>();
-	Trip t= null;
-	Driver d = null;
+	
 	
 	public void Addfavareass(String fav);
 	public void update(Object o);
@@ -30,4 +29,5 @@ public interface User {
 	boolean Login(String email , String Password, String role) ;
 	public boolean Register(String name , String password , String email , String Mobilenum, String role);
 	public boolean RegisterDriv(String name , String password , String email , String mobilenum, String drivlic, String nationalid);
+	public void AddBalance(int balance);
 }
