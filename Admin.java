@@ -8,7 +8,6 @@ public class Admin implements User{
 	@Override
 	public void update(Object o) {
 		// TODO Auto-generated method stub
-		
 	}
 	@Override
 	public String getName() {
@@ -122,6 +121,11 @@ public class Admin implements User{
 	}
 	@Override
 	public void Addfavareass(String fav) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void AddBalance(int balance) {
 		// TODO Auto-generated method stub
 		
 	}
