@@ -10,6 +10,7 @@ public  class Driver implements User {
 	public String nationalid= "";
 	public String fav= "";
 	public String verified= "";
+	public double balance= 0.0;
 	ArrayList<String> favareas  = new ArrayList<String>();
 	
 	public Driver() {}
@@ -26,6 +27,9 @@ public  class Driver implements User {
 		
 		
 	}
+	public void AddBalance (int balance) {
+		this.balance=balance;
+	}
 	@Override
 	public void Addfavareass(String fav)
 	{
@@ -34,10 +38,8 @@ public  class Driver implements User {
 	@Override
 	public void update(Object o) 
 	{
-		System.out.println("haiii");
-		if(o instanceof TransportationApp)
+		if(o instanceof TransportationApp )
 		{
-			System.out.println("haii2");
 			TransportationApp ta = (TransportationApp) o; //cast el o l transportation app
 			ta.getState();
 		}
